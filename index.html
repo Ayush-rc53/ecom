@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+    ============================================
+    RentEase - Furniture & Appliance Rental Website
+    ============================================
+    
+    This is the main HTML file for the RentEase website.
+    It contains:
+    - Navigation bar
+    - Hero/Banner section
+    - Product grid
+    - Footer
+    
+    Follow along with the comments to understand each section!
+-->
+
+<head>
+    <!-- meta tags provide information about the webpage -->
+    <meta charset="UTF-8">
+    <!-- UTF-8 includes all international characters -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- viewport makes the site work on mobile devices -->
+    
+    <title>RentEase - Furniture & Appliance Rental</title>
+    
+    <!-- Link to our CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ==================== -->
+    <!-- NAVIGATION BAR      -->
+    <!-- ==================== -->
+    <!-- The navbar helps users navigate the website -->
+    <nav class="navbar">
+        <!-- Logo/Brand name -->
+        <div class="logo">RentEase</div>
+        
+        <!-- Navigation links -->
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#cart">Cart (<span id="cart-count">0</span>)</a></li>
+        </ul>
+    </nav>
+
+    <!-- ==================== -->
+    <!-- HERO BANNER         -->
+    <!-- ==================== -->
+    <!-- This is the main banner that catches attention -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <!-- Main headline -->
+            <h1>Rent Furniture & Appliances Easily</h1>
+            <!-- Sub headline / description -->
+            <p> Affordable daily rentals for your home. No commitment, just convenience!</p>
+            <!-- Call to action button -->
+            <a href="#products" class="cta-button">Browse Products</a>
+        </div>
+    </section>
+
+    <!-- ==================== -->
+    <!-- PRODUCTS SECTION   -->
+    <!-- ==================== -->
+    <!-- This section displays all available rental items -->
+    <section id="products" class="products-section">
+        <!-- Section title -->
+        <h2 class="section-title">Our Rental Products</h2>
+        
+        <!-- Product grid - displays products in a grid layout -->
+        <div class="product-grid">
+            
+            <!-- Product 1: Modern Sofa -->
+            <div class="product-card">
+                <!-- Product image -->
+                <img src="https://placehold.co/300x200/4a90d9/white?text=Modern+Sofa" alt="Modern Sofa">
+                <!-- Product details -->
+                <h3>Modern Sofa</h3>
+                <p class="description">Comfortable 3-seater sofa</p>
+                <!-- Price per day -->
+                <p class="price">$50/day</p>
+                <!-- Add to Cart button -->
+                <button class="add-to-cart" onclick="addToCart('Modern Sofa', 50)">Add to Cart</button>
+            </div>
+
+            <!-- Product 2: Queen Size Bed -->
+            <div class="product-card">
+                <img src="https://placehold.co/300x200/5cb85c/white?text=Queen+Bed" alt="Queen Size Bed">
+                <h3>Queen Size Bed</h3>
+                <p class="description">Cozy bed with mattress</p>
+                <p class="price">$40/day</p>
+                <button class="add-to-cart" onclick="addToCart('Queen Size Bed', 40)">Add to Cart</button>
+            </div>
+
+            <!-- Product 3: Refrigerator -->
+            <div class="product-card">
+                <img src="https://placehold.co/300x200/f0ad4e/white?text=Refrigerator" alt="Refrigerator">
+                <h3>Refrigerator</h3>
+                <p class="description">Double door fridge</p>
+                <p class="price">$30/day</p>
+                <button class="add-to-cart" onclick="addToCart('Refrigerator', 30)">Add to Cart</button>
+            </div>
+
+            <!-- Product 4: Washing Machine -->
+            <div class="product-card">
+                <img src="https://placehold.co/300x200/d9534f/white?text=Washing+Machine" alt="Washing Machine">
+                <h3>Washing Machine</h3>
+                <p class="description">Automatic front loader</p>
+                <p class="price">$35/day</p>
+                <button class="add-to-cart" onclick="addToCart('Washing Machine', 35)">Add to Cart</button>
+            </div>
+
+            <!-- Product 5: Dining Table -->
+            <div class="product-card">
+                <img src="https://placehold.co/300x200/8e44ad/white?text=Dining+Table" alt="Dining Table">
+                <h3>Dining Table</h3>
+                <p class="description">6-seater wooden table</p>
+                <p class="price">$25/day</p>
+                <button class="add-to-cart" onclick="addToCart('Dining Table', 25)">Add to Cart</button>
+            </div>
+
+            <!-- Product 6: Air Conditioner -->
+            <div class="product-card">
+                <img src="https://placehold.co/300x200/17a2b8/white?text=Air+Conditioner" alt="Air Conditioner">
+                <h3>Air Conditioner</h3>
+                <p class="description">Split AC 1.5 ton</p>
+                <p class="price">$45/day</p>
+                <button class="add-to-cart" onclick="addToCart('Air Conditioner', 45)">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==================== -->
+    <!-- FOOTER              -->
+    <!-- ==================== -->
+    <!-- Footer contains copyright and contact info -->
+    <footer class="footer">
+        <p>&copy; 2024 RentEase. All rights reserved.</p>
+        <p>Made with ❤️ for beginners learning web development</p>
+    </footer>
+
+    <!-- Link to JavaScript file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
